@@ -11,3 +11,22 @@ median(analyse_assurance$couts)
 sd(analyse_assurance$couts)
 min(analyse_assurance$couts)
 max(analyse_assurance$couts)
+
+
+# Analyse des distributions:
+
+# Couts:
+
+ggplot(analyse_assurance,aes(x=couts))+
+  geom_histogram(bins = 30) +
+  labs(
+    title="Distribution des couts",
+    x="Couts",
+    y="Nb de personnes"
+  )
+
+
+
+
+
+  
