@@ -21,3 +21,6 @@ mse_glm
 
 
 # Modèle régression logistique 
+
+# On base le seuil sur la médiane
+seuil <- median(train$couts)
