@@ -11,3 +11,6 @@ modele_glm <- glm(
 )
 
 summary(modele_glm)
+
+# Predictions 
+pred_glm <- predict(modele_glm, newdata = test, type="réponse")
