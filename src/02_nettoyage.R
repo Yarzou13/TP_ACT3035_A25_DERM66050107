@@ -122,6 +122,7 @@ set.seed(3035)
 
 n <- nrow(analyse_assurance)
 
+indice_train <- sample(1:m, size = floor(0.8*n))
 
 
 
