@@ -77,10 +77,13 @@ ggplot(analyse_assurance, aes(x=fumeur, y=couts))+
     x="fumeur",
     y="Couts"
   )
+
 class(analyse_assurance$couts)
 summary(analyse_assurance$couts)
 head(analyse_assurance$couts)
 
+colnames(analyse_assurance)
+table(analyse_assurance$fumeur)
 
 
   
