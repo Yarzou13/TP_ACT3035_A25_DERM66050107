@@ -72,18 +72,13 @@ ggplot(analyse_assurance, aes(x=couts))+
 # Couts selon le statut de fumeur:
 
 ggplot(analyse_assurance, aes(x=fumeur, y=couts))+
+  geom_boxplot()+
   labs(
     title = "Couts selon le statut de fumeur",
     x="fumeur",
     y="Couts"
   )
 
-class(analyse_assurance$couts)
-summary(analyse_assurance$couts)
-head(analyse_assurance$couts)
-
-colnames(analyse_assurance)
-table(analyse_assurance$fumeur)
 
 
   
