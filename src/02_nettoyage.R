@@ -84,6 +84,7 @@ assurance <- assurance %>%
     sexe=="femme" | sexe=="homme"
   )
 
+summary(assurance)
 
 
 
