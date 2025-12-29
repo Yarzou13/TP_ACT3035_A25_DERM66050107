@@ -97,6 +97,11 @@ cor(
     select(age, imc, enfant, couts)
 )
 
+# Nuages de points:
+# IMC vs Couts 
+ggplot(analyse_assurance, aes(x=imc, y=couts))+
+  geom_point()
+
 
 
   
