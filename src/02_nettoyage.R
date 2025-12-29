@@ -17,3 +17,6 @@ assurance <- assurance %>%
       region=region,
       couts=charges
     )
+
+colnames(assurance)
+
