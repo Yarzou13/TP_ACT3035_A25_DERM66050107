@@ -29,7 +29,12 @@ seuil <- median(train$couts)
 train$cout_eleve <- ifelse(train$couts>seuil, 1, 0)
 test$cout_eleve <- ifelse(test$couts>seuil, 1, 0)
 
-
+# Modéle logistique 
+modele_log <- glm(
+  cout_eleve~age+imc+enfant+sexe+fumeur+region,
+  data=train,
+  family=binomial()
+)
 
 
 
