@@ -89,11 +89,13 @@ assurance <- assurance %>%
   mutate(
     categorie_imc=cut(
       imc,
-      breaks=c(0,18,5,25,30,60),
+      breaks=c(0,18.5,25,30,60),
       labels=c("sous_poid", "normal", "surpoids", "obèse"),
       right=F
     )
   )
+
+
 
 summary(assurance)
 
