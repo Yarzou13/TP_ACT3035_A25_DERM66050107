@@ -25,6 +25,15 @@ ggplot(analyse_assurance,aes(x=couts))+
     y="Nb de personnes"
   )
 
+# Age:
+
+ggplot(analyse_assurance,aes(x=age))+
+  geom_histogram(bins = 30) +
+  labs(
+    title="Distribution de l'age",
+    x="Age",
+    y="Nb de personnes"
+  )
 
 
 
