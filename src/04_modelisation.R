@@ -24,3 +24,12 @@ mse_glm
 
 # On base le seuil sur la médiane
 seuil <- median(train$couts)
+
+# Paramétrisation de cout élevé
+train$cout_eleve <- ifelse(train$couts>seuil, 1, 0)
+test$cout_eleve <- ifelse(test$couts>seuil, 1, 0)
+
+
+
+
+
