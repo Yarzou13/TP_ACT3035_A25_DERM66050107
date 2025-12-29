@@ -36,11 +36,7 @@ assurance <- assurance %>%
   )
 
 table(assurance$fumeur)
-table_fumeur <- table(analyse_assurance$fumeur)
 
-write.csv(as.data.frame(table_fumeur),
-          "results/tables/table_fumeur.csv",
-          row.names = FALSE)
 
 
 # traduction du nom des régions:
@@ -61,16 +57,7 @@ assurance <- assurance %>%
 table(assurance$region)
 table(assurance$sexe)
 
-table_region <- table(analyse_assurance$region)
 
-write.csv(as.data.frame(table_region),
-          "results/tables/table_fumeur.csv",
-          row.names = FALSE)
-table_sexe<- table(analyse_assurance$sexe)
-
-write.csv(as.data.frame(table_sexe),
-          "results/tables/table_fumeur.csv",
-          row.names = FALSE)
 
 
 # Traduction de male et female
@@ -115,11 +102,6 @@ assurance <- assurance %>%
 
 table(assurance$categorie_imc)
 
-table_categorie_imc <- table(analyse_assurance$categorie_imc)
-
-write.csv(as.data.frame(table_categorie_imc),
-          "results/tables/table_fumeur.csv",
-          row.names = FALSE)
 
 
 summary(assurance)
