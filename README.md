@@ -8,4 +8,7 @@
 # des fins éducatives. Il porte sur les couts d'assurance médicale aux États-Unis (il s'agit de données fictives et simulées).
 
 
+# Comment vous y avez accédé:
 
+# Étant un fichier CSV. J'ai d'abord téléchargé l'ensemble de donnés sous le format CSV.Par la suite, tel que vu en cours j'ai utilisé 
+# la procédure read.csv() afin de pouvoir ouvrir l'ensemble de données sur RStudio.
