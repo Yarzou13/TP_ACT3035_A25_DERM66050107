@@ -115,7 +115,9 @@ analyse_assurance <- assurance %>%
 
 summary(analyse_assurance)
 
-write.csv(analyse_assurance,"data/processed/insurance_clean.csv")
+write.csv(analyse_assurance,
+          "data/processed/insurance_clean.csv",
+          row.names = F)
 
 # Séparation éventuelle en ensembles d'entraînement et de test:
 # Tel que vu en cours on va utiliser le ratio 80/20
