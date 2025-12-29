@@ -20,13 +20,14 @@ assurance <- assurance %>%
 
 colnames(assurance)
 
+table(assurance$fumeur)
+
 
 # remplacer les yes et no par oui/non dans la colonne fumeur:
 
 assurance <- assurance %>% 
   mutate(
-    fumeur=ifelse(fumeur=="yes", "oui","non"),
-    fumeur=factor(fumeur, levels = c("oui","non"))
+    fumeur=ifelse(fumeur == "yes", "oui","non")
   )
 
 table(assurance$fumeur)
