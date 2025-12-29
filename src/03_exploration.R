@@ -90,4 +90,13 @@ ggplot(analyse_assurance, aes(x=categorie_imc, y=couts))+
   )
 
 
+# Graphiques de corrélation
+# Corrélation:
+cor(
+  analyse_assurance %>% 
+    select(age, imc, enfant, couts)
+)
+
+
+
   
