@@ -59,15 +59,15 @@ table(assurance$sexe)
 
 assurance <- assurance %>% 
   mutate(
-    sexe=ifelse(sexe == "yes", "oui","non"),
+    sexe=ifelse(sexe == "female", "femme","homme"),
   )
 # catégoriser oui et non:
 assurance <- assurance %>% 
   mutate(
-    fumeur=factor(fumeur,levels= c("oui","non"))
+    sexe=factor(sexe,levels= c("femme","homme"))
   )
 
-table(assurance$fumeur)
+table(assurance$sexe)
 
 
 # Traitement des valeurs aberrantes:
