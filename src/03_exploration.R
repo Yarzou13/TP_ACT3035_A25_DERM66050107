@@ -49,7 +49,7 @@ ggplot(analyse_assurance,aes(x=imc))+
 
 # Tableaux de fréquences pour les variables catégorielles:
 
-Table(analyse_assurance$sexe)
+table(analyse_assurance$sexe)
 
 
 
