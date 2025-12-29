@@ -27,7 +27,12 @@ table(assurance$fumeur)
 
 assurance <- assurance %>% 
   mutate(
-    fumeur=ifelse(fumeur == "yes", "oui","non")
+    fumeur=ifelse(fumeur == "yes", "oui","non"),
+  )
+# catégoriser oui et non:
+assurance <- assurance %>% 
+  mutate(
+    fumeur=factor(fumeur,levels= c("oui","non"))
   )
 
 table(assurance$fumeur)
