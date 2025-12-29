@@ -4,7 +4,7 @@
 summary(analyse_assurance)
 
 
-# Étant donné que la variable réponse sera le cout, nous allons plus détailler:
+# Étant donné que la variable réponse sera les couts, nous allons plus détailler:
 
 mean(analyse_assurance$couts)
 median(analyse_assurance$couts)
