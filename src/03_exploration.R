@@ -36,6 +36,17 @@ ggplot(analyse_assurance,aes(x=age))+
   )
 
 
+# IMC:
+
+ggplot(analyse_assurance,aes(x=imc))+
+  geom_histogram(bins = 30) +
+  labs(
+    title="Distribution de l'IMC",
+    x="IMC",
+    y="Nb de personnes"
+  )
+
+
 
 
   
