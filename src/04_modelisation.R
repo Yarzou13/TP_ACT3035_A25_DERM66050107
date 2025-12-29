@@ -36,5 +36,9 @@ modele_log <- glm(
   family=binomial()
 )
 
+# Resultat Modéle logistique 
+summary(modele_log)
+
+
 
 
