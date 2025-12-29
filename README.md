@@ -19,3 +19,8 @@ Ces données sont pertinentes pour une analyse actuarielle, car ce sont des donn
 Nettoyage des valeurs manquantes (justification de la méthode):
 
 Le nettoyage a été réalisé à l'aide de filtres basés sur des règles logiques afin de retirer les valeurs incohérentes ou irréalistes. Les variables catégorielles ont été harmonisées pour assurer une meilleure lisibilité et cohérence. Cette méthode a été choisie car elle permet de préparer les données pour l'analyse sans les transformer excessivement.
+
+
+Qualité des données, limites et problèmes potentiels:
+
+Les données présentent une bonne cohérence globale après le nettoyage avec des variables biens définies et exploitables pour l'analyse exploratoire. Par contre, les couts montrent une forte asymétrie, ce qui peut poser des problèmes pour certains modèles. De plus, certainess vairables explicatives sont catégorielles ou corrélées entres elles, ce qui pourrait nécessiter des ajustements ou des transformations lors de la modélisation.
