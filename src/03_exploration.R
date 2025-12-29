@@ -56,6 +56,7 @@ table(analyse_assurance$categorie_imc)
 
 
 # Maintenant, nous allons visualiser les données á l'aide d'histogrammes, graphiques, boites á moustaches et des graphiques.
+
 # Histogrammes et graphiques de densités:
 
 ggplot(analyse_assurance, aes(x=couts))+
@@ -67,7 +68,15 @@ ggplot(analyse_assurance, aes(x=couts))+
     y="densité"
   )
 
+# Boites á moustaches:
+# Couts selon le statut de fumeur:
 
+ggplot(analyse_assurance, aes(x=fumeur, y=couts))+
+  labs(
+    title = "Couts selon le statut de fumeur"
+    x="fumeur"
+    y="Couts"
+  )
 
 
 
