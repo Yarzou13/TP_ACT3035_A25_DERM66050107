@@ -36,9 +36,10 @@ assurance <- assurance %>%
     region=ifelse(region=="northeast", "nord_est",
     ifelse(region=="northwest", "nord_ouest",
     ifelse(region=="southeast", "sud_est",
-    ifelse(region=="southeast", "sud_ouest",))))
+    ifelse(region=="southeast", "sud_ouest", region))))
   )
 
+table(assurance$region)
 
 
 
