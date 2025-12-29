@@ -81,4 +81,5 @@ ggplot(analyse_assurance, aes(x=fumeur, y=couts))+
 
 
 
+
   
