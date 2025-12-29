@@ -14,3 +14,7 @@ summary(modele_glm)
 
 # Predictions 
 pred_glm <- predict(modele_glm, newdata = test, type="response")
+
+# Évaluation erreur quadratique moyenne
+mse_glm <- mean((test$couts - pred_glm)^2)
+mse_glm
