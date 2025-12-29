@@ -125,7 +125,7 @@ n <- nrow(analyse_assurance)
 indice_train <- sample(1:n, size = floor(0.8*n))
 
 
-train <- analyse_assurance[indice_train]
-test <- analyse_assurance[-indice_train]
+train <- analyse_assurance[indice_train,]
+test <- analyse_assurance[-indice_train,]
 
 
