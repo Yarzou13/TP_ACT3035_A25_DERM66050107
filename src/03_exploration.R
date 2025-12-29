@@ -79,6 +79,15 @@ ggplot(analyse_assurance, aes(x=fumeur, y=couts))+
     y="Couts"
   )
 
+# Couts selon la catégorie d'IMC:
+
+ggplot(analyse_assurance, aes(x=categorie_imc, y=couts))+
+  geom_boxplot()+
+  labs(
+    title = "Couts selon la catégorie d'IMC",
+    x="catégorie d'IMC",
+    y="Couts"
+  )
 
 
   
