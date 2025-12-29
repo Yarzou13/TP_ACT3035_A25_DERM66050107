@@ -115,7 +115,10 @@ analyse_assurance <- assurance %>%
 
 summary(analyse_assurance)
 
+# Séparation éventuelle en ensembles d'entraînement et de test:
+# Tel que vu en cours on va utiliser le ratio 80/20
 
+set.seed(3035)
 
 
 
