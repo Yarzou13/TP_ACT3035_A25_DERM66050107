@@ -39,6 +39,13 @@ modele_log <- glm(
 # Resultat Modéle logistique 
 summary(modele_log)
 
+# Predictions 
+proba_test <- predict(modele_log, newdata = test, type = "response")
+classe_test <- ifelse(proba_test>=0.5,1,0)
+table(predit= classe_test, Observed= test$cout_eleve)
+exactitude <- mean(classe_test==test$cout_eleve)
+exactitude
+
 
 
 
