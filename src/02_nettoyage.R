@@ -99,6 +99,23 @@ table(assurance$categorie_imc)
 
 summary(assurance)
 
+# Préparation des données pour l'analyse:
+
+analyse_assurance <- assurance %>% 
+  select(
+    age,
+    sexe,
+    imc,
+    categorie_imc,
+    enfant,
+    fumeur,
+    region,
+    couts
+  )
+
+summary(analyse_assurance)
+
+
 
 
 
