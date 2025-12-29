@@ -77,7 +77,11 @@ assurance <- assurance %>%
     age>=0,
     imc>0,
     enfant>=0,
-    c
+    couts>0,
+    fumeur=="oui" | fumeur=="non",
+    region=="nord_est" |region=="nord_ouest" |
+      region=="sud_est" |region=="sud_ouest",
+    sexe=="femme" | sexe=="homme"
   )
 
 
