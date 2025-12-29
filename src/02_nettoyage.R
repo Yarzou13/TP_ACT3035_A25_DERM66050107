@@ -25,7 +25,7 @@ colnames(assurance)
 
 assurance <- assurance %>% 
   mutate(
-    fumeur=ifelse(fumeur="yes", "oui","non")
+    fumeur=ifelse(fumeur=="yes", "oui","non")
   )
 
 
