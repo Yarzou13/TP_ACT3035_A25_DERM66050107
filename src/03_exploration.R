@@ -17,6 +17,9 @@ max(analyse_assurance$couts)
 
 # Couts:
 
+png("results/figures/hist_couts.png",
+    width = 800, height = 600)
+
 ggplot(analyse_assurance,aes(x=couts))+
   geom_histogram(bins = 30) +
   labs(
@@ -24,6 +27,8 @@ ggplot(analyse_assurance,aes(x=couts))+
     x="Couts",
     y="Nb de personnes"
   )
+
+dev.off()
 
 # Age:
 
