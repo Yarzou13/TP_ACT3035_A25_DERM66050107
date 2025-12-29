@@ -102,13 +102,7 @@ cor(
 ggplot(analyse_assurance, aes(x=imc, y=couts))+
   geom_point()
 
-# age vs Couts 
-ggplot(analyse_assurance, aes(x=age, y=couts))+
-  geom_point()
 
-# enfant vs Couts 
-ggplot(analyse_assurance, aes(x=enfant, y=couts))+
-  geom_point()
 
 
 
