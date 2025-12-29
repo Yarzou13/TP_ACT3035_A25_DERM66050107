@@ -53,6 +53,21 @@ assurance <- assurance %>%
   )
 
 table(assurance$region)
+table(assurance$sexe)
+
+# Traduction de male et female
+
+assurance <- assurance %>% 
+  mutate(
+    sexe=ifelse(sexe == "yes", "oui","non"),
+  )
+# catégoriser oui et non:
+assurance <- assurance %>% 
+  mutate(
+    fumeur=factor(fumeur,levels= c("oui","non"))
+  )
+
+table(assurance$fumeur)
 
 
 # Traitement des valeurs aberrantes:
