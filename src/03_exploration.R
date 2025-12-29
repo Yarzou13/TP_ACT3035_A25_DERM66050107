@@ -59,7 +59,7 @@ table(analyse_assurance$categorie_imc)
 # Histogrammes et graphiques de densités:
 
 ggplot(analyse_assurance, aes(x=couts))+
-  geom_histogram(aes(y=desity), bins=30)+
+  geom_histogram(aes(y=density), bins=30)+
   geom_density()+
   labs(
     title = "Histogramme et densité des couts",
