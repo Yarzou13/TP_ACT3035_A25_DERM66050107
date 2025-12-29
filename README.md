@@ -31,7 +31,10 @@ Définition du problème actuariel:
 La variable réponse retenue pour cette analyse est le cout médical (couts), puisqu'elle représente directement le montant des réclamations associées à chaque assuré. D'un point de vue actuariel, cette variable est centrale, car elle permet d'évaluer le risque financier porté par l'assureur. Les variables explicatives sélectionnées incluent l'age, l'IMC, le nombre d'enfants. le statut de fumeur, le sexe et la région, car elles sont reconnues comme des facteur influencant les dépenses de santé. L'objectif principal de la modélisation est d'analyser et expliquer les couts médicaux afin d'appuyer des décisions de tarification et la sélection des risques, dans une certaine mesure.
 
 
+Modéle 1 ( Modéle linéaire généralisé "GLM"): Le GLM a été choisi afin de modéliser les couts, une variable continue centrale en actuariat. Les résultats montrent que l'age et l'IMC ont effect positif et significatif sur les couts: une année d'age supplémentaire augmente les couts d'environ 249$ et une unité d'IMC d'environ 342$. Le nombre d'enfant est également associé à une hausse moyenne d'environ 546$. Le statut de fumeur est un facteur important, les non-fumeurs ont des couts nettement plus faibles que les fumeurs. L'ajustement du modèle est jugé satisfaisant, car la deviance résiduelle est beaucoup plus faible que celle du modèle nul.
 
+
+Modéle 2 ( Régression logistique): 
 
 
 
