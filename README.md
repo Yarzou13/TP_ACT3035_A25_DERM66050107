@@ -24,3 +24,20 @@ Le nettoyage a été réalisé à l'aide de filtres basés sur des règles logiq
 Qualité des données, limites et problèmes potentiels:
 
 Les données présentent une bonne cohérence globale après le nettoyage avec des variables biens définies et exploitables pour l'analyse exploratoire. Par contre, les couts montrent une forte asymétrie, ce qui peut poser des problèmes pour certains modèles. De plus, certainess vairables explicatives sont catégorielles ou corrélées entres elles, ce qui pourrait nécessiter des ajustements ou des transformations lors de la modélisation.
+
+
+Définition du problème actuariel:
+
+La variable réponse retenue pour cette analyse est le cout médical (couts), puisqu'elle représente directement le montant des réclamations associées à chaque assuré. D'un point de vue actuariel, cette variable est centrale, car elle permet d'évaluer le risque financier porté par l'assureur. Les variables explicatives sélectionnées incluent l'age, l'IMC, le nombre d'enfants. le statut de fumeur, le sexe et la région, car elles sont reconnues comme des facteur influencant les dépenses de santé. L'objectif principal de la modélisation est d'analyser et expliquer les couts médicaux afin d'appuyer des décisions de tarification et la sélection des risques, dans une certaine mesure.
+
+
+
+
+
+
+
+
+
+
+
+
