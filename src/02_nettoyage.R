@@ -10,7 +10,7 @@ library(tidyverse)
 assurance <- assurance %>% 
     rename(
       age=age,
-      sexe=sex
+      sexe=sex,
       imc=bmi,
       enfant=children,
       fumeur=smoker,
