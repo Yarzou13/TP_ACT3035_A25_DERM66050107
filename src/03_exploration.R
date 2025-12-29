@@ -73,8 +73,8 @@ ggplot(analyse_assurance, aes(x=couts))+
 
 ggplot(analyse_assurance, aes(x=fumeur, y=couts))+
   labs(
-    title = "Couts selon le statut de fumeur"
-    x="fumeur"
+    title = "Couts selon le statut de fumeur",
+    x="fumeur",
     y="Couts"
   )
 
