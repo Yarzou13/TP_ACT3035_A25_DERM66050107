@@ -55,6 +55,21 @@ table(analyse_assurance$region)
 table(analyse_assurance$categorie_imc)
 
 
+# Maintenant, nous allons visualiser les données á l'aide d'histogrammes, graphiques, boites á moustaches et des graphiques.
+# Histogrammes et graphiques de densités:
+
+ggplot(analyse_assurance, aes(x=couts))+
+  geom_histogram(aes(y=desity), bins=30)+
+  geom_density()+
+  labs(
+    title = "Histogramme et densité des couts",
+    x="couts",
+    y="densité"
+  )
+
+
+
+
 
 
   
