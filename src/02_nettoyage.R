@@ -120,6 +120,8 @@ summary(analyse_assurance)
 
 set.seed(3035)
 
+n <- nrow(analyse_assurance)
+
 
 
 
