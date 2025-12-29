@@ -30,6 +30,15 @@ assurance <- assurance %>%
 
 table(assurance$fumeur)
 
+# traduction du nom des régions:
+assurance <- assurance %>% 
+  mutate(
+    region=ifelse(region=="northeast", "nord_est"),
+    ifelse(region=="northwest", "nord_ouest"),
+    ifelse(region=="southeast", "sud_est"),
+    ifelse(region=="southeast", "sud_ouest"),
+  )
+
 
 
 
