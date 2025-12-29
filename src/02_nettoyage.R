@@ -25,7 +25,8 @@ colnames(assurance)
 
 assurance <- assurance %>% 
   mutate(
-    fumeur=ifelse(fumeur=="yes", "oui","non")
+    fumeur=ifelse(fumeur=="yes", "oui","non"),
+    fumeur=factor(fumeur, levels = c("oui","non"))
   )
 
 table(assurance$fumeur)
@@ -40,6 +41,17 @@ assurance <- assurance %>%
   )
 
 table(assurance$region)
+
+
+# Traitement des valeurs aberrantes:
+
+assurance <- assurance %>% 
+  filter(
+    age>=0,
+    imc>0,
+    enfant>=0,
+    c
+  )
 
 
 
