@@ -52,6 +52,7 @@ ggplot(analyse_assurance,aes(x=imc))+
 table(analyse_assurance$sexe)
 table(analyse_assurance$fumeur)
 table(analyse_assurance$region)
+table(analyse_assurance$categorie_imc)
 
 
 
