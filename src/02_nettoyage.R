@@ -28,6 +28,8 @@ assurance <- assurance %>%
     fumeur=ifelse(fumeur=="yes", "oui","non")
   )
 
+table(assurance$fumeur)
+
 
 
 
