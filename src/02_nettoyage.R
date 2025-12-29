@@ -95,7 +95,7 @@ assurance <- assurance %>%
     )
   )
 
-
+table(assurance$categorie_imc)
 
 summary(assurance)
 
