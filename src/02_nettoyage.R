@@ -46,6 +46,12 @@ assurance <- assurance %>%
     ifelse(region=="southwest", "sud_ouest", region))))
   )
 
+# catégoriser oui et non:
+assurance <- assurance %>% 
+  mutate(
+    region=factor(region,levels= c("nord_est","nord_ouest","sud_est","sud_ouest"))
+  )
+
 table(assurance$region)
 
 
