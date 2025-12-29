@@ -45,9 +45,10 @@ Justification du choix du modèle: La régression logistique est utilisée car l
 
 Résultat d'estimation: Les résultats indiquent l'age augmente significativement la probabilité d'avoir des couts élevés, avec un coefficient d'environ 0,16 par année. Certaines régions (nord-ouest, sud-est et sud-ouest) sont associées à une probabilité plus faible de cout élevés.
 
-Qualité de l'ajustement: 
+Qualité de l'ajustement: Le modèle présente un bon ajustement, comme le montre la forte diminution de la deviance entre le modèle nlu (1483,33) et le modèle ajusté (621,38)
 
 
+Comparaison et interprétation: Les deux modèles répondent à des objectifs différents et sont complémentaires. Le GLM est plus approprié pour analyser et expliquer le niveau des couts, car il permet d'estimer directement l'effect des caractéristiques des assurés sur les montant de réclamation, ce qui est particulièrement utile pour la tarification. La régression logistique, quant à elle, est mieux adaptée pour identifier les assurés à risque élevé, en modélisant la probabilité d'avoir des couts important. D'un point de vue actuariel, le GLM est le modèle le plus approprié lorsqu<on s'intéresse à l'évaluation du cout moyen attendu, tandis que la logistique permet une segmentation des tisques. Les résultats montrenet que des facteurs comme l'age et l'IMC et surtout le statut fumeur jouenet un role important , ce qui est peux avoir des implication pratiques en matière de tarification différencié=m de gestion du portefeuill et de stratégies de prévention cibleées.
 
 
 
