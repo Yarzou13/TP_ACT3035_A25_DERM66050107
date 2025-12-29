@@ -7,5 +7,9 @@ read.csv("insurance.csv")
 # On nomme l'ensemble de données:
 assurance <- read.csv("insurance.csv")
 
-# Observer l'ensemble des données sous forme de tableau R:
-View(assurance)
+# Remplacer la colonne fumeur par oui ou non au lieu de yes or no:
+
+assurance <- assurance %>% 
+  mutate(
+    fumeur=ifelse(fumeur="yes", "oui", "non")
+  )
